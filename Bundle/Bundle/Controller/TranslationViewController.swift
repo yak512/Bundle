@@ -13,6 +13,8 @@ class TraductionViewController: UIViewController {
     @IBOutlet weak var sourceText: UITextView!
     @IBOutlet weak var chooseLanguage: UISegmentedControl!
     @IBOutlet weak var translatedText: UITextView!
+    @IBOutlet weak var translateButton: UIButton!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +31,7 @@ class TraductionViewController: UIViewController {
         sourceText.text = ""
         translatedText.text = ""
     }
+    
     @IBAction func translateText(_ sender: Any) {
         let enOrfr = chooseLanguage.selectedSegmentIndex
         if let TextToTranslate = sourceText.text {
@@ -44,13 +47,21 @@ class TraductionViewController: UIViewController {
     }
     
     func translate(text: String, tar: String, src: String) {
+        toggleActivity(shown: true)
         TranslationService.shared.getTranslation(text: text, tar: tar, src: src) { (success, translated) in
+            self.toggleActivity(shown: false)
             if success, let translated = translated {
                 self.update(translated: translated)
             } else {
                 print("error")
             }
         }
+    }
+    
+    private func toggleActivity(shown: Bool) {
+        translateButton.isHidden = shown
+        activityIndicator.isHidden = !shown
+        
     }
     
     func update(translated: Translated) {
