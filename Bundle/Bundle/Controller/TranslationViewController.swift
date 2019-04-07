@@ -23,9 +23,12 @@ class TraductionViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
        // TranslationService().getTranslation(text: "i want you so bad", tar: "fr", src: "en")
        // print("out will apera")
-
     }
     
+    @IBAction func clearButton(_ sender: Any) {
+        sourceText.text = ""
+        translatedText.text = ""
+    }
     @IBAction func translateText(_ sender: Any) {
         let enOrfr = chooseLanguage.selectedSegmentIndex
         if let TextToTranslate = sourceText.text {
@@ -59,3 +62,4 @@ class TraductionViewController: UIViewController {
     }
     
 }
+
