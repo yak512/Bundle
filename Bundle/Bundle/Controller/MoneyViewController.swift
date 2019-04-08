@@ -19,23 +19,13 @@ class MoneyViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        getUsdRate()
         // Do any additional setup after loading the view.
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        MoneyService.shared.getUsdRate { (succes, MoneyRateResponse) in
-            if succes {
-                self.usdRate = MoneyRateResponse!.usdRate
-            } else {
-                self.presentAlert()
-            }
-        }
-    }
     
     @IBAction func convert(_ sender: Any) {
         if let amount = Float(amountMoney.text!) {
-            print(amount)
             let usdOrEurIndex = usdOrEur.selectedSegmentIndex
             if usdOrEurIndex == 0 {
                 resultConversion.text = "\(amount) dollar in euro:"
@@ -45,12 +35,23 @@ class MoneyViewController: UIViewController {
                 LabelResult.text =  "\(amount * usdRate) $"
 
             }
+        } else {
+            presentAlert(message: "Amount of money is empty")
         }
-      
     }
     
-    func presentAlert() {
-        let alertVC = UIAlertController(title: "Error", message: "The network requests failed", preferredStyle: .alert)
+    private func getUsdRate() {
+        MoneyService.shared.getUsdRate { (succes, MoneyRateResponse) in
+            if succes {
+                self.usdRate = MoneyRateResponse!.usdRate
+            } else {
+                self.presentAlert(message: "The network request failed")
+            }
+        }
+    }
+    
+    private func presentAlert(message: String) {
+        let alertVC = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alertVC, animated: true, completion: nil)
     }

@@ -18,6 +18,8 @@
 		745F28352256862600970436 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F28342256862600970436 /* Money.swift */; };
 		74A33D752254A0D6001FEE6C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A33D742254A0D6001FEE6C /* WeatherService.swift */; };
 		74A33D772254E855001FEE6C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A33D762254E855001FEE6C /* Weather.swift */; };
+		74AC6A9D225B4CBD000A3900 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC6A9C225B4CBD000A3900 /* QuoteService.swift */; };
+		74AC6A9F225B4DF6000A3900 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC6A9E225B4DF6000A3900 /* Quote.swift */; };
 		74D125582254197D00B030BF /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D125572254197D00B030BF /* WeatherViewController.swift */; };
 		74D1255A2254199500B030BF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D125592254199500B030BF /* MoneyViewController.swift */; };
 		74D1255C225419A400B030BF /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1255B225419A400B030BF /* TranslationViewController.swift */; };
@@ -38,6 +40,8 @@
 		745F28342256862600970436 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
 		74A33D742254A0D6001FEE6C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		74A33D762254E855001FEE6C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		74AC6A9C225B4CBD000A3900 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
+		74AC6A9E225B4DF6000A3900 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
 		74D125572254197D00B030BF /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		74D125592254199500B030BF /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		74D1255B225419A400B030BF /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				745F28342256862600970436 /* Money.swift */,
 				742AAE5C2258831E000F76DF /* TranslationService.swift */,
 				742AAE5E22588CFF000F76DF /* Translation.swift */,
+				74AC6A9C225B4CBD000A3900 /* QuoteService.swift */,
+				74AC6A9E225B4DF6000A3900 /* Quote.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -202,6 +208,8 @@
 				742AAE5D2258831E000F76DF /* TranslationService.swift in Sources */,
 				74D1255C225419A400B030BF /* TranslationViewController.swift in Sources */,
 				742AAE5F22588CFF000F76DF /* Translation.swift in Sources */,
+				74AC6A9D225B4CBD000A3900 /* QuoteService.swift in Sources */,
+				74AC6A9F225B4DF6000A3900 /* Quote.swift in Sources */,
 				743CA3A622539E5A00513A54 /* AppDelegate.swift in Sources */,
 				745F28352256862600970436 /* Money.swift in Sources */,
 				74D125582254197D00B030BF /* WeatherViewController.swift in Sources */,

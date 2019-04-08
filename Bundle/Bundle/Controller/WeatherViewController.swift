@@ -47,7 +47,7 @@ class WeatherViewController: UIViewController {
     }
     
     func presentAlert() {
-        let alertVC = UIAlertController(title: "Error", message: "The network requests failed", preferredStyle: .alert)
+        let alertVC = UIAlertController(title: "Error", message: "The network request failed", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alertVC, animated: true, completion: nil)
     }

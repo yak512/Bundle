@@ -35,7 +35,7 @@ class TraductionViewController: UIViewController {
     @IBAction func translateText(_ sender: Any) {
         let enOrfr = chooseLanguage.selectedSegmentIndex
         if let TextToTranslate = sourceText.text {
-            if enOrfr == 0 {
+            if enOrfr == 1 {
                 translate(text: TextToTranslate, tar: "en", src: "fr")
             } else {
                 translate(text: TextToTranslate, tar: "fr", src: "en")
@@ -53,7 +53,7 @@ class TraductionViewController: UIViewController {
             if success, let translated = translated {
                 self.update(translated: translated)
             } else {
-                print("error")
+                self.presentAlert()
             }
         }
     }
@@ -72,5 +72,10 @@ class TraductionViewController: UIViewController {
         sourceText.resignFirstResponder()
     }
     
+    private func presentAlert() {
+        let alertVC = UIAlertController(title: "Error", message: "The translation failed", preferredStyle: .alert)
+        alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
+        present(alertVC, animated: true, completion: nil)
+    }
 }
 
