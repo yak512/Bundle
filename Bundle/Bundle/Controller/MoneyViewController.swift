@@ -10,20 +10,29 @@ import UIKit
 
 class MoneyViewController: UIViewController {
 
-    var usdRate = Float()
+    // MARK: OUTLETS
+
+    // The amout of money to convert
     @IBOutlet weak var amountMoney: UITextField!
+    // choose between convert to usd or euro
     @IBOutlet weak var usdOrEur: UISegmentedControl!
+    // the result of conversion
     @IBOutlet weak var LabelResult: UILabel!
-    @IBOutlet weak var amoutCurrency: UILabel!
+    // the result of conversion text
     @IBOutlet weak var resultConversion: UILabel!
     
+    // usd rate
+    var usdRate = Float()
+    
+    // MARK: View Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         getUsdRate()
-        // Do any additional setup after loading the view.
     }
     
-    
+    // MARK: - BUTTONS ACTIONS //
+
     @IBAction func convert(_ sender: Any) {
         if let amount = Float(amountMoney.text!) {
             let usdOrEurIndex = usdOrEur.selectedSegmentIndex
@@ -40,6 +49,11 @@ class MoneyViewController: UIViewController {
         }
     }
     
+    @IBAction func dismissKeybord(_ sender: UITapGestureRecognizer) {
+        amountMoney.resignFirstResponder()
+    }
+    
+    // MARK functions
     private func getUsdRate() {
         MoneyService.shared.getUsdRate { (succes, MoneyRateResponse) in
             if succes {
@@ -54,9 +68,6 @@ class MoneyViewController: UIViewController {
         let alertVC = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         present(alertVC, animated: true, completion: nil)
-    }
-    @IBAction func dismissKeybord(_ sender: UITapGestureRecognizer) {
-        amountMoney.resignFirstResponder()
     }
     
 }

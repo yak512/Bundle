@@ -13,11 +13,18 @@ class QuoteService {
     
     private init() {}
     
+    // url used for the network call
     private static let quoteUrl = URL(string: "https://api.forismatic.com/api/1.0/")!
     
     
     private var task: URLSessionDataTask?
+    private var session = URLSession(configuration: .default)
+
+    init(session: URLSession) {
+        self.session = session
+    }
     
+    // This function is a network call
     func getQuote(callback: @escaping (Bool, Quote?) -> Void) {
         var request = URLRequest(url: QuoteService.quoteUrl)
         request.httpMethod = "POST"
@@ -25,7 +32,6 @@ class QuoteService {
         let body = "method=getQuote&format=json&lang=en"
         request.httpBody = body.data(using: .utf8)
         
-        let session = URLSession(configuration: .default)
         
         task?.cancel()
         task = session.dataTask(with: request) { (data, response, error) in

@@ -10,6 +10,9 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 
+    
+    // MARK: OUTLETS
+    
     @IBOutlet weak var descriptionWeatherParis: UILabel!
     @IBOutlet weak var tempWeatherParis: UILabel!
     
@@ -18,14 +21,14 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var tempWeatherNy: UILabel!
     
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-                // Do any additional setup after loading the view.
-    }
+    // MARK: View Life cycle
     
     override func viewWillAppear(_ animated: Bool) {
         showWeather()
     }
+    
+    
+    // MARK: functions
     
     private func showWeather() {
         WeatherService.shared.getParisWeather { (success, citysWeather) in
@@ -46,6 +49,7 @@ class WeatherViewController: UIViewController {
         tempWeatherNy.text = "\(citysWeather.tempNy) °C"
     }
     
+    // This function is called when we have an error
     func presentAlert() {
         let alertVC = UIAlertController(title: "Error", message: "The network request failed", preferredStyle: .alert)
         alertVC.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))

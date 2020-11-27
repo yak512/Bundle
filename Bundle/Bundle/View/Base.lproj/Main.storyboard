@@ -116,7 +116,6 @@
                     <connections>
                         <outlet property="LabelResult" destination="Vpd-N4-eQJ" id="ksS-ap-mKd"/>
                         <outlet property="amountMoney" destination="Ylf-bj-rkM" id="cpn-CC-b1q"/>
-                        <outlet property="amoutCurrency" destination="Eps-Rl-ooh" id="9cx-o2-WFD"/>
                         <outlet property="resultConversion" destination="jIV-bc-Axj" id="JPb-xs-uvs"/>
                         <outlet property="usdOrEur" destination="gNx-KC-a8r" id="Yst-Nr-LJN"/>
                     </connections>
@@ -144,7 +143,7 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Qgr-bX-EPI">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="60.5"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose language to translate: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-cz-fHq">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose the language for the translation: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fhe-cz-fHq">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="27.5"/>
                                                 <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
                                                 <nil key="textColor"/>

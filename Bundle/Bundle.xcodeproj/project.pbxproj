@@ -9,26 +9,52 @@
 /* Begin PBXBuildFile section */
 		742AAE5D2258831E000F76DF /* TranslationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AAE5C2258831E000F76DF /* TranslationService.swift */; };
 		742AAE5F22588CFF000F76DF /* Translation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AAE5E22588CFF000F76DF /* Translation.swift */; };
+		742AB382225CE50800281BCC /* WeatherServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AB381225CE50800281BCC /* WeatherServiceTestCase.swift */; };
+		742AB386225CE60D00281BCC /* Weather.json in Resources */ = {isa = PBXBuildFile; fileRef = 742AB385225CE60D00281BCC /* Weather.json */; };
+		742AB388225CE65600281BCC /* FakeResponseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AB387225CE65600281BCC /* FakeResponseData.swift */; };
+		742AB38A225CF11000281BCC /* URLSessionFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742AB389225CF11000281BCC /* URLSessionFake.swift */; };
 		743CA3A622539E5A00513A54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743CA3A522539E5A00513A54 /* AppDelegate.swift */; };
 		743CA3AB22539E5A00513A54 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743CA3A922539E5A00513A54 /* Main.storyboard */; };
 		743CA3AD22539E5C00513A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 743CA3AC22539E5C00513A54 /* Assets.xcassets */; };
 		743CA3B022539E5C00513A54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 743CA3AE22539E5C00513A54 /* LaunchScreen.storyboard */; };
 		743CA3BC22539EF300513A54 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 743CA3BB22539EF300513A54 /* Default-568h@2x.png */; };
 		743EBC0422567863007C5223 /* MoneyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 743EBC0322567863007C5223 /* MoneyService.swift */; };
+		74443AC1225E0281004B627D /* MoneyServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74443AC0225E0281004B627D /* MoneyServiceTestCase.swift */; };
+		74443AC3225E02F0004B627D /* Money.json in Resources */ = {isa = PBXBuildFile; fileRef = 74443AC2225E02F0004B627D /* Money.json */; };
 		745F28352256862600970436 /* Money.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745F28342256862600970436 /* Money.swift */; };
+		7462631522669A9200E27C1E /* QuoteServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7462631422669A9200E27C1E /* QuoteServiceTestCase.swift */; };
 		74A33D752254A0D6001FEE6C /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A33D742254A0D6001FEE6C /* WeatherService.swift */; };
 		74A33D772254E855001FEE6C /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A33D762254E855001FEE6C /* Weather.swift */; };
 		74AC6A9D225B4CBD000A3900 /* QuoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC6A9C225B4CBD000A3900 /* QuoteService.swift */; };
 		74AC6A9F225B4DF6000A3900 /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74AC6A9E225B4DF6000A3900 /* Quote.swift */; };
+		74B9ACAE2266A81100A6327E /* Quote.json in Resources */ = {isa = PBXBuildFile; fileRef = 74B9ACAD2266A81100A6327E /* Quote.json */; };
+		74CD70D7227656A0007484F5 /* Traduction.json in Resources */ = {isa = PBXBuildFile; fileRef = 74CD70D6227656A0007484F5 /* Traduction.json */; };
+		74CD70D922765759007484F5 /* TranslationServiceTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CD70D822765759007484F5 /* TranslationServiceTestCase.swift */; };
 		74D125582254197D00B030BF /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D125572254197D00B030BF /* WeatherViewController.swift */; };
 		74D1255A2254199500B030BF /* MoneyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D125592254199500B030BF /* MoneyViewController.swift */; };
 		74D1255C225419A400B030BF /* TranslationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1255B225419A400B030BF /* TranslationViewController.swift */; };
 		74D1255E225419AF00B030BF /* QuoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D1255D225419AF00B030BF /* QuoteViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		742AB37C225CE4B200281BCC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 743CA39A22539E5A00513A54 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 743CA3A122539E5A00513A54;
+			remoteInfo = Bundle;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		742AAE5C2258831E000F76DF /* TranslationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationService.swift; sourceTree = "<group>"; };
 		742AAE5E22588CFF000F76DF /* Translation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Translation.swift; sourceTree = "<group>"; };
+		742AB377225CE4B200281BCC /* BundleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BundleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		742AB37B225CE4B200281BCC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		742AB381225CE50800281BCC /* WeatherServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServiceTestCase.swift; sourceTree = "<group>"; };
+		742AB385225CE60D00281BCC /* Weather.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Weather.json; sourceTree = "<group>"; };
+		742AB387225CE65600281BCC /* FakeResponseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeResponseData.swift; sourceTree = "<group>"; };
+		742AB389225CF11000281BCC /* URLSessionFake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionFake.swift; sourceTree = "<group>"; };
 		743CA3A222539E5A00513A54 /* Bundle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bundle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		743CA3A522539E5A00513A54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		743CA3AA22539E5A00513A54 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,11 +63,17 @@
 		743CA3B122539E5C00513A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		743CA3BB22539EF300513A54 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		743EBC0322567863007C5223 /* MoneyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyService.swift; sourceTree = "<group>"; };
+		74443AC0225E0281004B627D /* MoneyServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyServiceTestCase.swift; sourceTree = "<group>"; };
+		74443AC2225E02F0004B627D /* Money.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Money.json; sourceTree = "<group>"; };
 		745F28342256862600970436 /* Money.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Money.swift; sourceTree = "<group>"; };
+		7462631422669A9200E27C1E /* QuoteServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteServiceTestCase.swift; sourceTree = "<group>"; };
 		74A33D742254A0D6001FEE6C /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		74A33D762254E855001FEE6C /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		74AC6A9C225B4CBD000A3900 /* QuoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteService.swift; sourceTree = "<group>"; };
 		74AC6A9E225B4DF6000A3900 /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		74B9ACAD2266A81100A6327E /* Quote.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Quote.json; sourceTree = "<group>"; };
+		74CD70D6227656A0007484F5 /* Traduction.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Traduction.json; sourceTree = "<group>"; };
+		74CD70D822765759007484F5 /* TranslationServiceTestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationServiceTestCase.swift; sourceTree = "<group>"; };
 		74D125572254197D00B030BF /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		74D125592254199500B030BF /* MoneyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyViewController.swift; sourceTree = "<group>"; };
 		74D1255B225419A400B030BF /* TranslationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +81,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		742AB374225CE4B200281BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		743CA39F22539E5A00513A54 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -59,11 +98,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		742AB378225CE4B200281BCC /* BundleTests */ = {
+			isa = PBXGroup;
+			children = (
+				742AB37B225CE4B200281BCC /* Info.plist */,
+				742AB381225CE50800281BCC /* WeatherServiceTestCase.swift */,
+				74443AC0225E0281004B627D /* MoneyServiceTestCase.swift */,
+				74CD70D822765759007484F5 /* TranslationServiceTestCase.swift */,
+				7462631422669A9200E27C1E /* QuoteServiceTestCase.swift */,
+				742AB387225CE65600281BCC /* FakeResponseData.swift */,
+				742AB389225CF11000281BCC /* URLSessionFake.swift */,
+				74B9ACAD2266A81100A6327E /* Quote.json */,
+				742AB385225CE60D00281BCC /* Weather.json */,
+				74CD70D6227656A0007484F5 /* Traduction.json */,
+				74443AC2225E02F0004B627D /* Money.json */,
+			);
+			path = BundleTests;
+			sourceTree = "<group>";
+		};
 		743CA39922539E5A00513A54 = {
 			isa = PBXGroup;
 			children = (
 				743CA3BB22539EF300513A54 /* Default-568h@2x.png */,
 				743CA3A422539E5A00513A54 /* Bundle */,
+				742AB378225CE4B200281BCC /* BundleTests */,
 				743CA3A322539E5A00513A54 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				743CA3A222539E5A00513A54 /* Bundle.app */,
+				742AB377225CE4B200281BCC /* BundleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -135,6 +194,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		742AB376225CE4B200281BCC /* BundleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 742AB380225CE4B200281BCC /* Build configuration list for PBXNativeTarget "BundleTests" */;
+			buildPhases = (
+				742AB373225CE4B200281BCC /* Sources */,
+				742AB374225CE4B200281BCC /* Frameworks */,
+				742AB375225CE4B200281BCC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				742AB37D225CE4B200281BCC /* PBXTargetDependency */,
+			);
+			name = BundleTests;
+			productName = BundleTests;
+			productReference = 742AB377225CE4B200281BCC /* BundleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		743CA3A122539E5A00513A54 /* Bundle */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 743CA3B422539E5C00513A54 /* Build configuration list for PBXNativeTarget "Bundle" */;
@@ -162,6 +239,11 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "BOUHADEB Yacoub";
 				TargetAttributes = {
+					742AB376225CE4B200281BCC = {
+						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
+						TestTargetID = 743CA3A122539E5A00513A54;
+					};
 					743CA3A122539E5A00513A54 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -181,11 +263,23 @@
 			projectRoot = "";
 			targets = (
 				743CA3A122539E5A00513A54 /* Bundle */,
+				742AB376225CE4B200281BCC /* BundleTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		742AB375225CE4B200281BCC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74CD70D7227656A0007484F5 /* Traduction.json in Resources */,
+				74443AC3225E02F0004B627D /* Money.json in Resources */,
+				74B9ACAE2266A81100A6327E /* Quote.json in Resources */,
+				742AB386225CE60D00281BCC /* Weather.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		743CA3A022539E5A00513A54 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -200,6 +294,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		742AB373225CE4B200281BCC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				742AB382225CE50800281BCC /* WeatherServiceTestCase.swift in Sources */,
+				742AB38A225CF11000281BCC /* URLSessionFake.swift in Sources */,
+				7462631522669A9200E27C1E /* QuoteServiceTestCase.swift in Sources */,
+				74443AC1225E0281004B627D /* MoneyServiceTestCase.swift in Sources */,
+				74CD70D922765759007484F5 /* TranslationServiceTestCase.swift in Sources */,
+				742AB388225CE65600281BCC /* FakeResponseData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		743CA39E22539E5A00513A54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -222,6 +329,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		742AB37D225CE4B200281BCC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 743CA3A122539E5A00513A54 /* Bundle */;
+			targetProxy = 742AB37C225CE4B200281BCC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		743CA3A922539E5A00513A54 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -242,6 +357,49 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		742AB37E225CE4B200281BCC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U827D84ZM8;
+				INFOPLIST_FILE = BundleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.yak.BundleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bundle.app/Bundle";
+			};
+			name = Debug;
+		};
+		742AB37F225CE4B200281BCC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U827D84ZM8;
+				INFOPLIST_FILE = BundleTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.yak.BundleTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bundle.app/Bundle";
+			};
+			name = Release;
+		};
 		743CA3B222539E5C00513A54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -397,6 +555,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		742AB380225CE4B200281BCC /* Build configuration list for PBXNativeTarget "BundleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				742AB37E225CE4B200281BCC /* Debug */,
+				742AB37F225CE4B200281BCC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		743CA39D22539E5A00513A54 /* Build configuration list for PBXProject "Bundle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

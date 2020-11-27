@@ -10,9 +10,15 @@ import UIKit
 
 class QuoteViewController: UIViewController {
 
+    // MARK: - OUTLETS
+
+    // The quote
     @IBOutlet weak var quoteText: UITextView!
+    // The button that generate new quote
     @IBOutlet weak var newQuoteButton: UIButton!
+    // The author of the quote
     @IBOutlet weak var author: UILabel!
+    // Activuty indicator, show us if something is going on
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     override func viewDidLoad() {
@@ -21,12 +27,12 @@ class QuoteViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    // MARK: - BUTTONS ACTIONS //
 
     @IBAction func newQuote(_ sender: Any) {
         toggleActivity(shown: true)
         
         QuoteService.shared.getQuote { (success, quote) in
-            print("in")
             self.toggleActivity(shown: false)
             if success, let quote = quote {
                 self.update(quote: quote)
@@ -36,6 +42,7 @@ class QuoteViewController: UIViewController {
         }
     }
     
+    // MARK: - FUNCTINS
     private func toggleActivity(shown: Bool) {
         newQuoteButton.isHidden = shown
         activityIndicator.isHidden = !shown

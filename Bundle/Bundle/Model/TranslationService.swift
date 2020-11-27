@@ -12,10 +12,18 @@ class TranslationService {
     static var shared = TranslationService()
     private init() {}
     
+    // url used for the network call
     private static let translateURL =  URL(string: "https://translation.googleapis.com/language/translate/v2?key=AIzaSyBRUg2M1c5g6RDODc3IiwEa05RamnrvIas")!
     
     private var task: URLSessionDataTask?
     
+    private var tradSession = URLSession(configuration: .default)
+    
+    init(session: URLSession) {
+        tradSession.self = session
+    }
+    
+    // This function is a network call
     func getTranslation(text: String, tar: String, src: String, callback: @escaping (Bool, Translated?) -> Void) {
         var request = URLRequest(url: TranslationService.translateURL)
         request.httpMethod = "POST"
@@ -27,8 +35,7 @@ class TranslationService {
         let body = "&q=" + q + "&target=" + target + "&source=" + source
         request.httpBody = body.data(using: .utf8)
         
-        let session = URLSession(configuration: .default)
-        task = session.dataTask(with: request) { (data, response, error) in
+        task = tradSession.dataTask(with: request) { (data, response, error) in
             DispatchQueue.main.async {
                 guard let data = data, error == nil else {
                     callback(false, nil)
